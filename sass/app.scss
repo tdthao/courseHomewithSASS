@@ -1,0 +1,115 @@
+@use 'test' as c;
+// sass sass/app.scss ./css/app.css
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+// @import 'test';
+@import 'global';
+@import 'body';
+@import 'header';
+@import 'footer';
+
+body.green-theme {
+  // background-color: c.$light-background-color;
+  
+a:hover {
+    opacity: 0.8;
+  }
+  .header__nav {
+    &--left {
+      a:hover {
+        color: c.$primary-color;
+      }
+    }
+    &--right {
+      .btn-login:hover {
+        color: c.$primary-color;
+        
+      }
+    }
+  }
+  .btn:hover,
+  .wrap-btn-learn-more:hover {
+    opacity: 0.8;
+  }
+  .section-1 {
+    .main-content {
+      .header-tag {
+        color: c.$primary-color;
+      }
+    }
+  }
+  .btn {
+    color: c.$primary-color;
+    background-color: c.$light-background-color;
+  }
+  .section {
+    .container {
+      .section-tag {
+        color: c.$light-background-color;
+      }
+      .testimonials-card-list {
+        .testimonials-card-item {
+          .user {
+            &-name {
+              color: c.$light-background-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .container {
+    .wrap-btn-learn-more {
+      color: c.$light-background-color;
+    }
+    & .product-card-item .product-card-info {
+      .wrap-btn-learn-more {
+        border: 1px solid c.$light-background-color;
+      }
+      .product-category {
+        &-block {
+          .product-category {
+            color: c.$light-background-color;
+          }
+        }
+      }
+    }
+    .right-arrow2-icon {
+      filter: invert(47%) sepia(30%) saturate(412%) hue-rotate(71deg)
+        brightness(91%) contrast(92%);
+    }
+    .right-arrow-icon {
+      filter: invert(47%) sepia(88%) saturate(388%) hue-rotate(35deg)
+        brightness(112%) contrast(101%);
+    }
+    .card-item {
+      &.card-active {
+        background-color: c.$light-background-color;
+        & .wrap-icon .card-icon {
+          filter: invert(47%) sepia(30%) saturate(412%) hue-rotate(71deg)
+            brightness(91%) contrast(92%);
+        }
+      }
+      & .wrap-icon {
+        background-color: c.$light-background-color;
+      }
+    }
+  }
+
+  .footer {
+    .container {
+      .list-items {
+        .footer-item {
+          .item__social-media {
+            filter: invert(47%) sepia(30%) saturate(412%) hue-rotate(71deg)
+              brightness(91%) contrast(92%);
+              .item-media:hover {
+                  opacity: 0.8;
+              }
+          }
+        }
+      }
+    }
+  }
+}

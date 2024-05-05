@@ -1,0 +1,51 @@
+.footer {
+    .container {
+        .list-items {
+          padding: 80px 0;
+         display: flex;
+            width: 100%;
+            justify-content: space-between;
+            column-gap: 30px;
+        .footer-item {
+            display: flex;    
+            flex-direction: column;
+            row-gap: 20px;
+            width: 25%;
+            .item-title {
+                color: $text-color;
+            }
+            .item-desc {
+                width: 211px;
+            }
+            .item-help-list {
+                display: flex;
+                flex-direction: column;
+                
+                .item-help {
+                    
+                    a {
+                        color: $second-text-color;
+    
+                    }
+                }
+
+            }
+            .item__social-media {
+                @include basic-flex;
+                column-gap: 20px;
+            }
+
+        }
+        .footer-item-1 {
+            row-gap: 25px;
+        }
+        
+
+
+      }
+      .foreword {
+        padding: 25px 0;
+        text-align: center;
+      }
+    }
+  }
